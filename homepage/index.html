@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ad-banner" id="banner">
+      🎉 *Зарегистируйтесь и получите <b>-10%!*</b>
+      <button class="close-btn" onclick="closeBanner()">✖</button>
+    </div>
+    <header>
+      <a href="index.html">
+        <img
+          class="logofoto"
+          width="120px"
+          src="https://yt3.ggpht.com/a/AATXAJx4U2crh0sa98Y_vikKjNPkTMY_YJ_sAF3DsA=s900-c-k-c0xffffffff-no-rj-mo"
+          alt="logofoto"
+      /></a>
+      <div class="searchbtn">
+        <input id="search" type="text" placeholder="Поиск" />
+        <button id="btn1" oneclick="searchproduct()">
+          <img src="https://www.svgrepo.com/show/443942/gui-search.svg"
+          alt="icon" width="15px"
+        </button>
+      </div>
+      <a class="link1" href="register.html">Регистрация</a>
+      <a class="link1" href="signup.html">Войти</a>
+      <a class="link1" href="aboutme.html">О нас</a>
+      <div class="cityselect">
+        <a href="korzina.html">
+          <img
+            class="korzinafoto"
+            src="https://thumbs.dreamstime.com/b/icono-de-s%C3%ADmbolo-del-carro-compras-ilustraci%C3%B3n-196607755.jpg"
+            alt="korzinafoto"
+          />
+        </a>
+        <select name="city" id="city">
+          <option value="city">Almaty</option>
+          <option value="city">Aktay</option>
+          <option value="city">Astana</option>
+          <option value="city">Shymkent</option>
+        </select>
+      </div>
+    </header>
+    <div id="container">
+      <a class="link" href="/products/face.html">Уход за лицом</a>
+      <a class="link" href="/products/bodycare.html">Уход за телом</a>
+      <a class="link" href="/products/decorativecosmet.html"
+        >Декоративная косметика</a
+      >
+      <a class="link" href="/products/hair.html">Уход за волосами</a>
+      <a class="link" href="/products/pharmacycosmet.html"
+        >Аптечная косметика</a
+      >
+      <a class="link" href="/products/perfume.html">Парфюмерия</a>
+      <a class="link" href="/products/manicpedic.html"
+        >Для маникюра и педикюра</a
+      >
+      <a class="link" href="/products/accessories.html"
+        >Аксесуары для красоты</a
+      >
+    </div>
+    <br /><br /><br />
+
+    <h1>Акции</h1>
+    <div class="slidercontainer">
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="https://th.bing.com/th/id/OIP.oZGP_tPbmpqJ48-IlyQ0swHaFy?rs=1&pid=ImgDetMain"
+            alt="реклама1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://th.bing.com/th/id/OIP.T2g2YLkdHIPwk6gDr-D1mgHaHa?w=600&h=600&rs=1&pid=ImgDetMain"
+            alt="реклама2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="
+              https://storage.beautyfulls.com/uploads-1/avatar/blogpost/900x/2023/03/13/figure-1678683253932.png"
+            alt="реклама3"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://sun9-43.userapi.com/impg/TL426a982jgIB3TT49-b7e_UHFKbtk0-xNbC2A/I9_OSJDJ0tQ.jpg?size=604x604&quality=96&sign=994c71758d4d07f6f14f22c09cd5d3cb&type=album"
+            alt="реклама4"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://th.bing.com/th/id/OIP.0NDd1XJP4mGeU0hJ0aTjsQHaJQ?rs=1&pid=ImgDetMain"
+            alt="реклама5"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://korealab.by/image/cache/catalog/by_wishtrend/syvorotka-s-vitaminom-s-by-wishtrend-pure-vitamin-c-advanced-serum1-800x800.jpg"
+            alt="реклама6"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://fb.ru/misc/i/gallery/253547/3840530.jpg"
+            alt="реклама7"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://th.bing.com/th/id/OIP.WohRxl6YnQUcgGH0TsyFzwHaHa?rs=1&pid=ImgDetMain"
+            alt="реклама8"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src=" https://fraguru.com/himg/o.40NctpohaY7.jpg"
+            alt="реклама9"
+          />
+        </div>
+      </div>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <br /><br /><br />
+
+    <h1>Новинки</h1>
+    <div class="newproducts">
+      <div class="newprodcard">
+        <img
+          src="https://fraguru.com/mdimg/perfume/social.97213.jpg"
+          alt="parfum1"
+        />
+        <p>Парфюмерная вода</p>
+        <h2>NEYDO breathe out 01.02</h2>
+        <h3>24800 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000342031/web/696d6167654d6f64656c5f37633534313338316439646434616266393263363862663733653237316263378dd1ea17a94bc0cfullhd.webp"
+          alt="pomada1"
+        />
+        <p>Помада-блеск для губ</p>
+        <h2>SHIK satin lipstick</h2>
+        <h3>6732 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://s3.images-iherb.com/clo/clo56154/v/12.jpg"
+          alt="karandash1"
+        />
+        <p>Карандаш для бровей</p>
+        <h2>CLIO kill brow auto hard</h2>
+        <h3>4929 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000358411/web/696d674d61696e5f66396361376266343062623034633064626534313262366137396538336431668dd15ecb0675fa9fullhd.webp"
+          alt=""
+        />
+        <p>Frudia Солнцезащитный крем для лица Spf 50+</p>
+        <h2>Frudia Blueberry</h2>
+        <h3>7210 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000329552/web/696d674d61696e5f65306230616531356533356434653364613861393437613130666132636161378dce76b5eb327e1fullhd.webp"
+          alt=""
+        />
+        <p>Массажер для лица и кожи головы</p>
+        <h2>Isamaya Sculpt 1</h2>
+        <h3>24 192 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000353007/web/696d674d61696e5f33323638323434656265303834373231616336376635643933656661386633348dd24e8c931c6abfullhd.webp"
+          alt=""
+        />
+        <p>Увлажняющая эссенция для эластичности кожи лица</p>
+        <h2>Yadah Collagen Hydra</h2>
+        <h3>14 355 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000342341/web/696d674d61696e5f62633161626165626336646534383232616536323464663263383636646561358dcfe376ba76c48fullhd.webp"
+          alt=""
+        />
+        <p>Масло для губ</p>
+        <h2>3INA THE COLOR LIP OIL</h2>
+        <h3>9 715 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000329275/web/696d67416464335f35626638623033333732643134636137383237613133353333303236633239388dd3aeecc0f7741fullhd.webp"
+          alt=""
+        />
+        <p>Маска для восстановления и питания волос</p>
+        <h2>ROSSANO FERRETTI Dolce 05 repair</h2>
+        <h3>25 540 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000326890/web/696d67416464335f61353532353436353164313934336430386666613333623330386137663035358dd476e6772d814fullhd.webp"
+          alt=""
+        />
+        <p>Питательная кремовая эссенция</p>
+        <h2>DARLING* Calm balm</h2>
+        <h3>8 730 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000342979/web/696d67416464335f38306665323837383634353034656364383266663764636637643863306532378dd24c95f370239fullhd.webp"
+          alt=""
+        />
+        <p>Парфюмерный экстракт</p>
+        <h2>ESSENTIAL PARFUMS PARIS BOIS IMPERIAL</h2>
+        <h3>83 830 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000368940/web/696d674d61696e5f34613138386566643237323834653338393939313265643562386266353731338dd2678469a02e5fullhd.webp"
+          alt=""
+        />
+        <p>Сыворотка для лица</p>
+        <h2>Clinique Moisture Surge Active Glow</h2>
+        <h3>22 320 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000378614/web/696d674d61696e5f63383061346239303066656534653662396664623239633237663437656336318dd41d7cca6164ffullhd.webp"
+          alt=""
+        />
+        <p>Умная колонка</p>
+        <h2>Яндекс Light 2</h2>
+        <h3>32 990 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000292283/web/696d674d61696e5f61366636663266336138363234646631613038393061336163343230363466368dd0e05a245d430fullhd.webp"
+          alt=""
+        />
+        <p>Clio Тональный фиксирующий кушон SPF 50+ PA+++</p>
+        <h2>Clio Kill cover skin fixer cushion</h2>
+        <h3>13 135 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://www.fann.sk/sub/fann.sk/images/DOMINIKA/Domi_2018/2_2018/Alma_K_For_Men_FAnn_parfumerie_850.jpg"
+          alt=""
+        />
+        <p>Набор для ухода за кожей лица и тела</p>
+        <h2>Alma K. Restore essentials kit for men</h2>
+        <h3>19377 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+      <div class="newprodcard">
+        <img
+          src="https://pcdn.goldapple.ru/p/p/19000348323/web/696d674d61696e5f62656534313966343332393534623937393038333335633031383633353538328dd04b67eabf4bffullhd.webp"
+          alt=""
+        />
+        <p class="">Кремовые тени для век</p>
+        <h2>Love Generation Стекловата</h2>
+        <h3>1 405 ₸</h3>
+        <button class="buybtn">В корзину</button>
+      </div>
+    </div>
+
+    <br /><br /><br />
+    <footer>
+      <div class="footcontainer">
+        <a href="index.html">
+          <img
+            class="logofoto1"
+            width="120px"
+            src="https://yt3.ggpht.com/a/AATXAJx4U2crh0sa98Y_vikKjNPkTMY_YJ_sAF3DsA=s900-c-k-c0xffffffff-no-rj-mo"
+            alt="logofoto"
+        /></a>
+
+        <div class="footcon1">
+          <h2>О нас</h2>
+          <a class="text2" href="">политика обработки персональных данных</a>
+          <a class="text2" href="">документы сайта</a>
+          <a class="text2" href="">вакансии</a>
+          <a class="text2" href="">наши магазины</a>
+        </div>
+        <div class="footcon2">
+          <h2>Клиентам</h2>
+          <a class="text2" href="">доставка и оплата</a>
+          <a class="text2" href="">возврат товара</a>
+          <a class="text2" href="">бонусная программа</a>
+        </div>
+        <div class="footcon3">
+          <h2>Контакты</h2>
+          <a class="text2" href="">общие контакты</a>
+          <a class="text2" href="">отдел маркетинга и рекламы</a>
+          <a class="text2" href="">для предложений по ассортименту</a>
+        </div>
+        <div class="footcon4">
+          <h2>8 747 880 09 01</h2>
+          <p>круглосуточный телефон call-центр</p>
+        </div>
+        <div class="footcon5">
+          <a href="">
+            <img
+              src="https://i.pinimg.com/736x/7b/d6/2c/7bd62cec696ff8ed87d8235b31107a2b.jpg"
+              alt=""
+            />
+          </a>
+          <a href="https://web.telegram.org/a/#5134673074">
+            <img
+              src="https://img.freepik.com/premium-vector/round-telegram-logo-isolated-white-background_469489-903.jpg?w=2000"
+              alt=""
+          /></a>
+          <a href="">
+            <img
+              src="https://th.bing.com/th/id/R.5432aea57a00fdf4cbd071111edd6b24?rik=KbmVjQpa2oH47A&riu=http%3a%2f%2fwww.globemart.co.jp%2fnewwp%2fwp-content%2fuploads%2f2020%2f07%2fpng-transparent-instagram-application-logo-logo-computer-icons-instagram-miscellaneous-text-trademark.png&ehk=lcQOcike6WMzJ2XZBp%2bXYNpnI2HyheUOkSY80NCUZA4%3d&risl=&pid=ImgRaw&r=0"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="https://th.bing.com/th/id/R.802a19bdfaec18f714d44db59b456a6e?rik=CQCh9R93wQro6g&pid=ImgRaw&r=0"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <p class="foottext">
+        ТОО «The Beauty Company», БИН: 21078699871 ·Почтовый адрес: Республика
+        Казахстан, город Алматы, пр. Желтоксан 122, почтовый индекс: А2SE3RH3S
+      </p>
+    </footer>
+    <script src="java.js"></script>
+  </body>
+</html>

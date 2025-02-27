@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          class="logofoto"
+          width="120px"
+          src="https://yt3.ggpht.com/a/AATXAJx4U2crh0sa98Y_vikKjNPkTMY_YJ_sAF3DsA=s900-c-k-c0xffffffff-no-rj-mo"
+          alt="logofoto"
+      /></a>
+      <div class="searchbtn">
+        <input id="search" type="text" placeholder="Поиск" />
+        <button id="btn1" oneclick="searchproduct()">
+          <img src="https://www.svgrepo.com/show/443942/gui-search.svg"
+          alt="icon" width="15px"
+        </button>
+      </div>
+      <a class="link1" href="aboutme.html">О нас</a>
+    </header>
+    <style>
+      .cart {
+        width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 2px 6px 2px black;
+      }
+
+      #cart-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+
+      .btn {
+        background: white;
+        color: black;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+      }
+
+      .btn:hover {
+        background: red;
+        border-radius: 20px;
+        color: white;
+      }
+    </style>
+
+    <div>
+      <div class="cart">
+        <h3>🛒 Корзина</h3>
+        <ul id="cart-list"></ul>
+        <p class="total">Общий: <span id="total-price">0</span>₸</p>
+        <button class="btn" onclick="clearCart()" style="background: red">
+          Очистить корзину
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
