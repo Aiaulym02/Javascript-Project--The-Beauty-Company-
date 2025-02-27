@@ -48,14 +48,14 @@ forget.addEventListener("click", (event) => {
 
 //Localstorage
 
-// function addSend() {
-//   const name = document.getElementById("firstname").value;
-//   const surname = document.getElementById("lastname").value;
-//   const email = document.getElementById("email").value;
-//   const password = document.getElementById("password").value;
-//   localStorage.setItem("name", name);
-//   localStorage.setItem("surname", surname);
-//   localStorage.setItem("email", email);
-//   localStorage.setItem("password", password);
-//   alert("Вы успешно зарегистривовались!");
-// }
+function addSend() {
+  const name = document.getElementById("firstname").value;
+  const surname = document.getElementById("lastname").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  localStorage.setItem("name", name);
+  localStorage.setItem("surname", surname);
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password);
+  alert("Вы успешно зарегистривовались!");
+}
