@@ -40,7 +40,6 @@ setInterval(prevSlide, 2000);
 //Забыли пароль
 
 let forget = document.getElementById("forget");
-
 forget.addEventListener("click", (event) => {
   let surak = prompt("Напишите свой email");
   alert("Отправили код на ваш Email");
